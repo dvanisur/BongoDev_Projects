@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -683,20 +683,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-0 {
-  gap: 0px;
-}
-
 .gap-1 {
   gap: 0.25rem;
 }
 
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-28 {
-  gap: 7rem;
 }
 
 .gap-3 {
@@ -742,6 +734,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
 .bg-scroll_color {
   --tw-bg-opacity: 1;
   background-color: rgb(128 128 128 / var(--tw-bg-opacity));
@@ -782,11 +779,6 @@ video {
   padding-right: 2.5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -807,11 +799,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-9 {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
 .pe-10 {
   -webkit-padding-end: 2.5rem;
           padding-inline-end: 2.5rem;
@@ -822,11 +809,6 @@ video {
           padding-inline-end: 3.5rem;
 }
 
-.pe-28 {
-  -webkit-padding-end: 7rem;
-          padding-inline-end: 7rem;
-}
-
 .pe-3 {
   -webkit-padding-end: 0.75rem;
           padding-inline-end: 0.75rem;
@@ -835,11 +817,6 @@ video {
 .pe-4 {
   -webkit-padding-end: 1rem;
           padding-inline-end: 1rem;
-}
-
-.pe-6 {
-  -webkit-padding-end: 1.5rem;
-          padding-inline-end: 1.5rem;
 }
 
 .ps-2 {
@@ -925,10 +902,6 @@ video {
   opacity: 0;
 }
 
-.first-letter\:flex::first-letter {
-  display: flex;
-}
-
 .first-line\:inline-block::first-line {
   display: inline-block;
 }
@@ -940,6 +913,11 @@ video {
 
 .hover\:p-2:hover {
   padding: 0.5rem;
+}
+
+.hover\:text-cyan-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(6 182 212 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -970,16 +948,8 @@ video {
     visibility: visible;
   }
 
-  .lg\:flex {
-    display: flex;
-  }
-
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .lg\:gap-28 {
-    gap: 7rem;
   }
 
   .lg\:px-80 {
