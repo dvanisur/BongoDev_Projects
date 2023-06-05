@@ -36,44 +36,67 @@
     </nav>
     
 
-    <div class="flex flex-col gap-4 justify-center items-center mt-44">
+    <div class="flex flex-col gap-4 justify-center items-center mt-44 ">
         <img class="w-2/12 " src="/Asset/logo/Google_2015_logo.svg.png" alt="">
         <div class="flex flex-col gap-2 ">
             <div class=" relative ">
                 <i class='bx bx-search text-black absolute top-3 left-3 text-2xl hover:text-green-500'></i>
-                <i class='bx bxs-microphone text-blue-600 absolute top-3 right-6 text-2xl hover:text-green-500'></i>
-                <i class='bx bx-camera text-blue-600 absolute top-3 right-14 text-2xl hover:text-green-500'></i>
+                <div class="relative group">
+                    <i class='bx bxs-microphone text-blue-600 absolute top-3 right-6 text-2xl hover:text-green-500'></i>
+                    <div class=" bg-slate-800 p-2 absolute top-12 -right-14 hidden group-hover:inline">
+                        <span>Search by microphone</span>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <i class='bx bx-camera text-blue-600 absolute top-3 right-14 text-2xl hover:text-green-500'></i>
+                    <div class=" bg-slate-800 p-2 absolute top-12 right-2 hidden group-hover:inline">
+                        <span>Search by images</span>
+                    </div>
+                </div>
+                
                 <input type="search" class="px-10 py-2 w-full border-2 border-gray-300 rounded-full " name="search" id="search" placeholder="Search engine or Type a URL">
             </div>            
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-2 lg:grid-cols-4 mt-2 ">
-                <div class="flex flex-col gap-1 justify-center items-center hover:bg-slate-400 hover:rounded hover:text-blue-800 ">
-                    <i class='bx bxl-gmail text-3xl'></i>
-                    Gmail
-                </div>
-                <div class="flex flex-col gap-1 justify-center items-center hover:bg-slate-400  hover:rounded hover:text-blue-800">
-                    <i class='bx bxl-facebook-circle text-3xl'></i>
-                    Facebook
-                </div>
-                <div class="flex flex-col gap-1 justify-center items-center hover:bg-slate-400 hover:rounded hover:text-blue-800 ">
-                    <i class='bx bxl-linkedin text-3xl' ></i>
-                    Linkdin
-                </div>
-                <div class="flex flex-col gap-1 justify-center items-center hover:bg-slate-400 hover:rounded hover:text-blue-800">
-                    <i class='bx bxl-instagram text-3xl' ></i>
-                    Instagram
-                </div>
-                <div class="flex flex-col gap-1 justify-center items-center hover:bg-slate-400 hover:rounded hover:text-blue-800 ">
-                    <i class='bx bxl-twitter text-3xl' ></i>
-                    Twitter
-                </div>
-                <div class="flex flex-col gap-1 justify-center items-center hover:bg-slate-400 hover:rounded hover:text-blue-800">
-                    <i class='bx bxs-file-plus text-3xl'></i>
-                    Add shortcut
-                </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-2 lg:grid-cols-4 mt-10 ">
+                <a href="https://mail.google.com/">
+                    <div class="flex flex-col gap-1 justify-center items-center hover:bg-slate-400 hover:rounded hover:text-blue-800 ">
+                        <i class='bx bxl-gmail text-3xl'></i>
+                        Gmail
+                    </div>
+                </a>
+                <a href="https://www.Facebook.com/">
+                    <div class="flex flex-col gap-1 justify-center items-center hover:bg-slate-400  hover:rounded hover:text-blue-800">
+                        <i class='bx bxl-facebook-circle text-3xl'></i>
+                        Facebook
+                    </div>
+                </a>
+                <a href="https://www.Linkdin.com/">
+                    <div class="flex flex-col gap-1 justify-center items-center hover:bg-slate-400 hover:rounded hover:text-blue-800 ">
+                        <i class='bx bxl-linkedin text-3xl' ></i>
+                        Linkdin
+                    </div>
+                </a>
+                <a href="https://www.Instagram.com/">
+                    <div class="flex flex-col gap-1 justify-center items-center hover:bg-slate-400 hover:rounded hover:text-blue-800">
+                        <i class='bx bxl-instagram text-3xl' ></i>
+                        Instagram
+                    </div>
+                </a>
+                <a href="https://www.Twitter.com/">
+                    <div class="flex flex-col gap-1 justify-center items-center hover:bg-slate-400 hover:rounded hover:text-blue-800 ">
+                        <i class='bx bxl-twitter text-3xl' ></i>
+                        Twitter
+                    </div>
+                </a>
+                <a href="https://www..com/">
+                    <div class="flex flex-col gap-1 justify-center items-center hover:bg-slate-400 hover:rounded hover:text-blue-800">
+                        <i class='bx bxs-file-plus text-3xl'></i>
+                        Add shortcut
+                    </div>
+                </a>              
             </div>
     </div>
     <footer class="flex flex-col fixed left-0 w-full bottom-0 p-3  text-gray-500">
-        <p class="py-1 hover:underline hover:text-blue-600">Bangladesh</p>
+        <p class="py-1 ">Bangladesh</p>
         <hr>
         <div class="flex justify-between py-1 ">
             <div class="flex gap-2">
@@ -83,8 +106,8 @@
                 <p class="hover:underline hover:text-blue-600">How to work search engine?</p>
             </div>
             <div class="flex gap-2">
-                <p class="hover:underline hover:text-blue-600">Setting</p>
-                <p class="hover:underline hover:text-blue-600">Policy</p>
+                <a href=""><p class="hover:underline hover:text-blue-600">Setting</p></a> 
+                <a href="https://policies.google.com/privacy?hl=en-BD&fg=1" target="_blank"><p class="hover:underline hover:text-blue-600">Policy</p></a> 
                 <p class="hover:underline hover:text-blue-600">Condition</p>
             </div>
         </div>
