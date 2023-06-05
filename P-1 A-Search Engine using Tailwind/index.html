@@ -17,15 +17,26 @@
     <nav class="flex justify-end gap-4 items-center p-8">
         <span class="hover:underline">Gmail</span>
         <span class="hover:underline">Image</span>
-        <span class="hover:border-violet-900 hover:text-blue-900"><i class='bx bxs-grid'></i></span>
-        <span><img class="w-14 rounded-full hover:border-2 " src="/Asset/logo/8.jpg" alt=""></span>
+        <div class="relative group">
+            <span class="hover:border-violet-900 hover:text-blue-900"><i class='bx bxs-grid'></i></span>
+            <div class=" absolute -left-24 top-8 card bg-gray-800 text-white p-1 hidden group-hover:inline  ">
+                <h1>Google apps</h1>
+            </div>
+        </div>
+        
+        <div class="relative group">
+            <span><img class="w-14 rounded-full hover:border-2 " src="/Asset/logo/8.jpg" alt=""></span>
+            <div class="absolute -left-64 top-16 card bg-gray-800 text-white p-4 hidden group-hover:inline">
+                <h3>Google Account</h3>
+                <span class="text-gray-400">Md Anisur Rahman</span>
+                <span class="text-gray-400">mdanisurrahman172@gmail.com</span>
+            </div>
+        </div>
+        
     </nav>
-    <!-- <div class="card flex flex-col justify-center items-center bg-slate-300 w-64 p-10">
-        <p>Md Anisur Rahman</p>
-        <p>mdanisurrahman172@gmail.com</p>
-    </div> -->
+    
 
-    <div class="flex flex-col gap-4 justify-center items-center mt-32">
+    <div class="flex flex-col gap-4 justify-center items-center mt-44">
         <img class="w-2/12 " src="/Asset/logo/Google_2015_logo.svg.png" alt="">
         <div class="flex flex-col gap-2 ">
             <div class=" relative ">
