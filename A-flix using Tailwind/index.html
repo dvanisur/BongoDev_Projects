@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a supper cool video rendering side">
+    <!-- OGP -->
+    <meta property="og:title" content="A-flix">
+    <meta property="og:description" content="A-flix is a streaming service that offers a wide variety of award-winning TV shows,
+     movies, anime, documentaries, and more on thousands of internet-connected ...">
+
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>A-flix|Tailwindcss</title>
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <!-- AoS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body class="bg-bg_color " >
+    <div class=" text-color_white border-b-4 border-gray-500 shadow-slate-600 bg-no-repeat bg-cover bg-blend-darken "
+     style="background-image: url('/Assets/hero.jpg'); opacity: 0.75; background-size: cover; ">
+        <nav class="flex justify-between items-center p-6 container m-auto">
+            <img class="w-40 h-auto " src="/Assets/brandlogo-removebg-preview.png" alt="brandlogo.png">
+            <div class="text-color_white bg-bg_btn inline py-2 px-6 rounded hover:bg-red-800">
+                <a href="/loging.html">Sign In</a>
+            </div>
+        </nav>
+        <div class="px-20  flex flex-col justify-center items-center pt-40 gap-4 container m-auto">
+            <span class="text-3xl font-bold opacity-100">
+                Unlimited movies, TV shows, and more
+            </span>
+            <h3 class="font-bold text-2xl opacity-100">
+                Plans now start at USD2.99/month.
+            </h3>
+            <h2 class="text-xl opacity-100">
+                Ready to watch? Enter your email to create or restart your membership.
+            </h2>
+            <div class="relative items-center me-44 cursor-pointer pb-40">
+                <form action="post">
+                    <label for="for email">
+                        <input class="py-2 text-black lg:px-40 " type="email" placeholder="Email Address" id="email">
+                    </label>
+                </form>
+                <div class="bg-bg_btn py-2 px-12 absolute -right-44 top-0 rounded hover:bg-red-800 ">
+                    <span >Get start ></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Enjoy on your tv -->
+    <div class=" py-20 flex flex-col items-center  ">
+        <div class=" container m-auto text-center text-white gap-5 md:flex justify-between items-center " >
+            <div class="flex flex-col gap-2">
+                <h1 class="font-bold text-3xl">
+                     Enjoy on your TV
+                </h1>
+                <p>
+                    Watch on Smart TVs,Playstation,Xbox,CFhremecast,Apple TV,Blu-ray Players and moder
+                </p>
+            </div>
+            <div width="500px" class="flex items-center justify-center mt-20 "
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500">
+                <video class="border-2 border-gray-500" controls height="100%"  width="90%" >
+                    <source src="/Assets/Netflix Bangladesh - Watch TV Shows Online, Watch Movies Online.m4v" type="video/mp4" media="all and (max-width: 444px)"> </source>
+                </video> 
+            </div>          
+        </div>
+    </div>
+    <!-- Watch everywhere -->
+    <div class=" py-20  gap-5  ">
+        <div class=" container m-auto text-center text-white gap-5 md:flex flex-row-reverse justify-between items-center " >
+            <div class="flex flex-col gap-2 mb-6">
+                <h1 class="font-bold text-3xl">
+                    Watch everywhere
+                </h1>
+                <p>
+                    Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                </p>
+            </div> 
+            <div class="flex items-center justify-center  relative "
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <video class="border-2 border-gray-500" controls height="100%"  width="90%" >
+                    <source src="/Assets/Netflix Bangladesh - Watch TV Shows Online, Watch Movies Online.m4v" type="video/mp4" media="all and (max-width: 444px)" > 
+                    </source>
+                    </video> 
+                <div class="flex items-center justify-center gap-4 mt-10 absolute top-1/4 left-1/3 px-10  ">
+                    <img class="w-30 h-40 " src="/Assets/mobile-2.jpg" alt="">
+                    <video class="border-2 border-gray-500" controls height="100%"  width="70%" >
+                        <source src="/Assets/Netflix Bangladesh - Watch TV Shows Online, Watch Movies Online.m4v" type="video/mp4" media="all and (max-width: 444px)" > 
+                        </source>
+                        </video>       
+                </div>             
+            </div>     
+        </div>
+    </div>
+
+    <!-- Create profiles for kids -->
+    <div class=" ">
+        <div class="container m-auto  text-center text-white py-20 gap-5 md:flex justify-between items-center ">
+            <div class="flex flex-col gap-2 mt-10">
+                <h1 class="font-bold text-3xl">
+                    Create profiles for kids
+               </h1>
+               <p>
+                    Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
+               </p>
+            </div>
+            <div data-aos="flip-right">
+                <img src="/Assets/kids.png" alt="">
+            </div>           
+        </div>
+    </div>
+    
+        <!-- Download your shows to watch offline -->
+    <div class="">
+        <div class="container m-auto  text-center text-white py-20 gap-5 md:flex flex-row-reverse justify-between items-center ">
+            <div class="flex flex-col gap-2">
+                <h1 class="font-bold text-3xl">
+                    Download your shows to watch offline
+               </h1>
+               <p>
+                    Save your favorites easily and always have something to watch.
+               </p>
+            </div>
+            <div class="relative inline-block "
+            data-aos="fade-up"
+            data-aos-duration="3000">
+                <img class=" " src="/Assets/mobile-0819.jpg" alt="">
+                <div class="flex gap-4  justify-center bg-black border-2 border-gray-600 py-2 rounded absolute bottom-0 right-28 px-8 items-center md:left-24  w-">
+                    <img class="w-10" src="/Assets/boxshot.png" alt="">
+                    <div>
+                        <h3>Stranger Things</h3>
+                        <p class="text-blue-700">Downloading...</p>
+                    </div>
+                    <span class="material-symbols-outlined">
+                        download
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FQA -->
+    <div class="border-b-4 border-gray-500 py-10  cursor-pointer">
+        <div class="text-white container m-auto flex flex-col justify-center gap-4  ">
+            <div class="text-center">
+                <h1 class="font-bold text-3xl">Frequently Asked Questions</h1> 
+            </div>
+            <!-- What is A-flix? -->
+            <div class="relative bg-gray-500 p-2 hover:bg-gray-400 cursor-pointer">
+                <!-- input checkbox -->
+                <input type="checkbox" id="input1" class="absolute peer opacity-0">
+                <!-- heading -->
+                <label for="input1" class="font-bold h-[50px] flex items-center "> What is A-flix?</label>
+                <!-- arrow -->
+                <span class="material-symbols-outlined absolute top-[20px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                    expand_more
+                    </span>
+                <!-- content -->
+                <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                    <p class="p-[20px] text-sm border-t-2">
+                        
+                        A-flix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                    </p>
+                </div>
+            </div>
+            <!-- How much does A-flix cost? -->
+            <div class="relative bg-gray-500 p-2 hover:bg-gray-400 cursor-pointer">
+                <!-- input checkbox -->
+                <input type="checkbox" id="input2" class="absolute peer opacity-0">
+                <!-- heading -->
+                <label for="input2" class="font-bold h-[50px] flex items-center ">How much does A-flix cost?</label>
+                <!-- arrow -->
+                <span class="material-symbols-outlined absolute top-[20px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                    expand_more
+                    </span>
+                <!-- content -->
+                <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                    <p class="p-[20px] text-sm border-t-2">
+                        Watch A-flix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from USD2.99 to USD9.99 a month. No extra costs, no contracts.
+                    </p>
+                </div>
+            </div>
+            <!-- Where can I watch? -->
+            <div class="relative bg-gray-500 p-2 hover:bg-gray-400 cursor-pointer">
+                <!-- input checkbox -->
+                <input type="checkbox" id="input3" class="absolute peer opacity-0">
+                <!-- heading -->
+                <label for="input3" class="font-bold h-[50px] flex items-center ">Where can I watch?</label>
+                <!-- arrow -->
+                <span class="material-symbols-outlined absolute top-[20px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                    expand_more
+                    </span>
+                <!-- content -->
+                <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                    <p class="p-[20px] text-sm border-t-2">
+                        Watch anywhere, anytime. Sign in with your A-flix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the A-flix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                        You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take A-flix with you anywhere.
+                    </p>
+                </div>
+            </div>
+            <!-- How can I cancel -->
+            <div class="relative bg-gray-500 p-2 hover:bg-gray-400 cursor-pointer">
+                <!-- input checkbox -->
+                <input type="checkbox" id="input4" class="absolute peer opacity-0">
+                <!-- heading -->
+                <label for="input4" class="font-bold h-[50px] flex items-center ">How can I cancel?</label>
+                <!-- arrow -->
+                <span class="material-symbols-outlined absolute top-[20px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                    expand_more
+                    </span>
+                <!-- content -->
+                <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                    <p class="p-[20px] text-sm border-t-2">
+                        A-flix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                    </p>
+                </div>
+            </div>
+            <!-- What can I watch on A-flix? -->
+            <div class="relative bg-gray-500 p-2 hover:bg-gray-400 cursor-pointer">
+                <!-- input checkbox -->
+                <input type="checkbox" id="input5" class="absolute peer opacity-0">
+                <!-- heading -->
+                <label for="input5" class="font-bold h-[50px] flex items-center ">What can I watch on A-flix?</label>
+                <!-- arrow -->
+                <span class="material-symbols-outlined absolute top-[20px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                    expand_more
+                    </span>
+                <!-- content -->
+                <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                    <p class="p-[20px] text-sm border-t-2">
+                        A-flix has an extensive library of feature films, documentaries, TV shows, anime, award-winning A-flix originals, and more. Watch as much as you want, anytime you want.
+                    </p>
+                </div>
+            </div>
+            <!-- Is A-flix good for kids -->
+            <div class="relative bg-gray-500 p-2 hover:bg-gray-400 cursor-pointer">
+                <!-- input checkbox -->
+                <input type="checkbox" id="input6" class="absolute peer opacity-0">
+                <!-- heading -->
+                <label for="input6" class="font-bold h-[50px] flex items-center ">Is A-flix good for kids?</label>
+                <!-- arrow -->
+                <span class="material-symbols-outlined absolute top-[20px] right-[30px] rotate-0 peer-checked:rotate-180 duration-200">
+                    expand_more
+                    </span>
+                <!-- content -->
+                <div class="max-h-0 overflow-hidden peer-checked:max-h-full">
+                    <p class="p-[20px] text-sm border-t-2">
+                        The A-flix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 ">
+                <div >
+                    <h1 class="text-3xl font-bold text-center">Ready to watch? Enter your email to create or restart your membership.</h1>
+                </div>
+                <div class="relative items-center me-44 flex flex-col gap-2 cursor-pointer">
+                    <form action="post">
+                        <label for="for email">
+                            <input class="py-2 text-black lg:px-40" type="email" placeholder="Email Address" id="email">
+                        </label>
+                    </form>
+                    <div class=" bg-bg_btn py-2 px-12  rounded md:absolute md:top-0 md:left-[40vw] lg:left-[50vw] hover:bg-red-950">
+                        <span>Get start ></span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-white flex flex-col gap-6 container m-auto py-4">
+        <a class="hover:text-cyan-500 underline" href="">Questions? Contact us.</a>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 cursor-pointer">
+            <a class="hover:text-cyan-500 underline" href="">FAQ</a>
+            <a class="hover:text-cyan-500 underline" href="">Media Center</a>
+            <a class="hover:text-cyan-500 underline" href="">Ways to Watch</a>
+            <a class="hover:text-cyan-500 underline" href="">Cookie Preferences</a>
+            <a class="hover:text-cyan-500 underline" href="">Speed Test</a>
+            <a class="hover:text-cyan-500 underline" href="">Help Center</a>
+            <a class="hover:text-cyan-500 underline" href="">Investor Relations</a>
+            <a class="hover:text-cyan-500 underline" href="">Terms of Use</a>
+            <a class="hover:text-cyan-500 underline" href="">Corporate Information</a>
+            <a class="hover:text-cyan-500 underline" href="">Legal Notices</a>
+            <a class="hover:text-cyan-500 underline" href="">Account</a>
+            <a class="hover:text-cyan-500 underline" href="">Jobs</a>
+            <a class="hover:text-cyan-500 underline" href="">Privacy</a>
+            <a class="hover:text-cyan-500 underline" href="">Contact Us</a>
+            <a class="hover:text-cyan-500 underline" href="">Only on Netflix</a>
+        </div>
+        <div>
+            <div class="p-2 px-6 bg-gray-500 border-2 inline-block">
+                <span class="material-symbols-outlined">
+                    language
+                    </span>
+                <select class=" bg-gray-500 " name="" id="select">
+                    <option value="">English</option>
+                    <option value="">Bangla</option>
+                </select>
+            </div>
+           
+        </div>
+        <p>A-flex Bangladesh</p>
+    </footer>
+
+    
+    
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+  
+    
+    
+</body>
+</html>
