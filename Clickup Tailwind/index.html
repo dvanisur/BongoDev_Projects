@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickup|Tailwind</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body class="ps-52 pe-10 pt-7 bg-slate-100">
+    <nav class="flex flex-col fixed left-0 top-4 gap-4 px-4">
+        <div class="flex flex-col gap-2 ">
+            <img class="w-40" src="/Assets/logo-removebg-preview.png" alt="">
+            <div class="flex gap-2 cursor-pointer hover:text-cyan-500">
+                <span class="material-symbols-outlined">
+                    home
+                    </span>
+                <h3>Home</h3>
+            </div>
+            <div class="flex gap-2 cursor-pointer hover:text-cyan-500">
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+                <h3>Notification</h3>
+            </div>
+            <div class="flex gap-2 cursor-pointer hover:text-cyan-500">
+                <span class="material-symbols-outlined">
+                    rewarded_ads
+                </span>
+                <h3>Goals</h3>
+            </div>
+        </div>
+        <div class="flex flex-col gap-2 ">
+            <div class="flex justify-between cursor-pointer hover:text-cyan-500">
+                <h3> Spaces</h3>
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+            </div>
+            <div class="flex gap-2 cursor-pointer hover:text-cyan-500">
+                <span class="material-symbols-outlined">
+                    drag_indicator
+                </span>
+                <h3>Everything</h3>
+            </div>
+            <div class="flex gap-2 cursor-pointer hover:text-cyan-500">
+                <div class="py-1 px-2 bg-blue-900 text-white rounded inline-block  ">
+                    <p>D</p>
+                </div>
+                <h3>Development</h3>
+            </div>
+            <div class="flex gap-2 cursor-pointer hover:text-cyan-500">
+                <div class="py-1 px-2 bg-yellow-500 text-white ro inline-block  ">
+                    <p>M</p>
+                </div>
+                <h3>Marketing</h3>
+            </div>
+            <div class="flex gap-2 cursor-pointer hover:text-cyan-500">
+                <div class="py-1 px-2 bg-pink-500 text-white ro inline-block  ">
+                    <p>P</p>
+                </div>
+                <h3>Product</h3>
+            </div>
+        </div>
+        <div class="flex justify-between items-center cursor-pointer hover:text-cyan-500" >
+            <h3>Dashboards</h3>
+            <span class="material-symbols-outlined">
+                chevron_right
+            </span>
+        </div>
+        <div class="flex justify-between cursor-pointer hover:text-cyan-500">
+            <h3>Docs</h3>
+            <span class="material-symbols-outlined">
+                chevron_right
+            </span>
+        </div>  
+
+    </nav>
+    <!--top section body -->
+    <section class=" flex gap-10   ">
+        <div class="flex justify-between items-center text-2xl gap-2">
+            <span class="material-symbols-outlined bg-pink-500 p-1">
+                new_releases
+            </span>
+            <h3>Release Project</h3>
+        </div>
+        <div class="flex justify-between items-center text-2xl text-blue-900 gap-2">
+            <span class="material-symbols-outlined ">
+                tabs
+            </span>
+            <h3>Table</h3>
+        </div>
+    </section>
+    <!-- 2nd section of body -->
+    <section class="flex justify-between items-center mt-6">
+        <div class="flex cursor-pointer">
+            <span class="material-symbols-outlined hover:text-cyan-500">
+                filter_alt
+            </span>
+            <span class="material-symbols-outlined hover:text-cyan-500">
+                arrow_drop_down
+            </span>
+            <p>Filter</p>
+        </div>
+        <div class="flex items-center gap-2">
+            <div class="flex  hover:text-cyan-500">
+                <p>
+                    Group by: None
+                </p>
+                <span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+            </div>
+            <div class="bg-slate-100 px-2 py-1 rounded  hover:bg-cyan-500">
+                <span class="material-symbols-outlined">
+                    format_line_spacing
+                </span>
+            </div>
+            <p class="bg-slate-100 px-6 py-1 inline-block rounded  hover:bg-cyan-500">Hiden Colums</p>
+            <div class="bg-slate-100 px-6 py-1 flex gap-1 rounded  hover:bg-cyan-500">
+                <span class="material-symbols-outlined">
+                    share
+                </span>
+                <p>Share</p>
+            </div>
+            <div class=" hover:text-cyan-500">
+                <span class="material-symbols-outlined">
+                    more_horiz
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- table of body -->
+    <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700 border-collapse border">
+        <thead>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">#</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">Task Name</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-rightborder-collapse border"> </th>                
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">Due Date </th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">Time Remaining</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="px-4 py-4 font-medium whitespace-nowrap border-collapse border ">1</td>
+                <td class="px-4 py-4 font-medium whitespace-nowrap border-collapse border">Update contractor agreement</td>
+                <td class="text-blue-500 px-4 py-4 font-medium whitespace-nowrap border-collapse border" >IN PROCESS</td>
+                <td class="px-4 py-4 font-medium whitespace-nowrap border-collapse border">Tommorow</td>
+                <td class="px-4 py-4 font-medium whitespace-nowrap border-collapse border">6h 20m</td>
+                <td class="px-4 py-4 font-medium whitespace-nowrap border-collapse border">Planing</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium border-collapse border">2</td>
+                <td class="px-4 py-4 font-medium border-collapse border">Plan for next year</td>
+                <td class="text-cyan-500 border-collapse border px-4 py-4 font-medium whitespace-nowrap" >PENDING</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium border-collapse border">3</td>
+                <td class="px-4 py-4 font-medium border-collapse border">How to manage event planing</td>
+                <td class="text-violet-700 border-collapse border px-4 py-4 font-medium whitespace-nowrap" >READY</td>
+                <td class="px-4 py-4 font-medium border-collapse border">Apr 28</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium border-collapse border">4</td>
+                <td class="px-4 py-4 font-medium border-collapse border">Remainders for Tasks</td>
+                <td class="text-yellow-500 border-collapse border px-4 py-4 font-medium whitespace-nowrap" >REVIEW</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+                <td class="px-4 py-4 font-medium border-collapse border">2h</td>
+                <td class="px-4 py-4 font-medium border-collapse border">Execution</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium border-collapse border">5</td>
+                <td class="px-4 py-4 font-medium border-collapse border">Budget assessment</td>
+                <td class="text-red-500 border-collapse border px-4 py-4 font-medium whitespace-nowrap" >ISSUES FOUND</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium border-collapse border">6</td>
+                <td class="px-4 py-4 font-medium border-collapse border">Finalize project scope</td>
+                <td class="text-blue-500 border-collapse border px-4 py-4 font-medium whitespace-nowrap" >IN PROCESS</td>
+                <td class="px-4 py-4 font-medium border-collapse border">Today</td>
+                <td class="px-4 py-4 font-medium border-collapse border">1h</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium border-collapse border">7</td>
+                <td class="px-4 py-4 font-medium border-collapse border">Gather key resourses</td>
+                <td class="text-violet-700 border-collapse border px-4 py-4 font-medium whitespace-nowrap" >READY</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium border-collapse border">8</td>
+                <td class="px-4 py-4 font-medium border-collapse border">Budget assessment</td>
+                <td class="text-red-500 border-collapse border px-4 py-4 font-medium whitespace-nowrap" >ISSUES FOUND</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium border-collapse border">9</td>
+                <td class="px-4 py-4 font-medium border-collapse border">Finalize project scope</td>
+                <td class="text-blue-500 border-collapse border px-4 py-4 font-medium whitespace-nowrap" >IN PROCESS</td>
+                <td class="px-4 py-4 font-medium border-collapse border">Today</td>
+                <td class="px-4 py-4 font-medium border-collapse border">1h</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium whitespace-nowrap border-collapse border ">10</td>
+                <td class="px-4 py-4 font-medium whitespace-nowrap border-collapse border">Update contractor agreement</td>
+                <td class="text-blue-500 px-4 py-4 font-medium whitespace-nowrap border-collapse border" >IN PROCESS</td>
+                <td class="px-4 py-4 font-medium whitespace-nowrap border-collapse border">Tommorow</td>
+                <td class="px-4 py-4 font-medium whitespace-nowrap border-collapse border">6h 20m</td>
+                <td class="px-4 py-4 font-medium whitespace-nowrap border-collapse border">Planing</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium border-collapse border">11</td>
+                <td class="px-4 py-4 font-medium border-collapse border">Plan for next year</td>
+                <td class="text-cyan-500 border-collapse border px-4 py-4 font-medium whitespace-nowrap" >PENDING</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+                <td class="px-4 py-4 font-medium border-collapse border">-</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+         
+</body>
+</html>
