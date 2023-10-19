@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickup Timeline Calendar|Tailwind</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body class="lg:ps-52 lg:pe-10 lg:pt-7 bg-slate-100">
+    <nav class="flex justify-between lg:flex-col gap-10  fixed left-0 top-4 px-4 text-xl">
+        <div class="flex justify-between  lg:flex-col gap-4 ">
+            <img class=" h-14 lg:w-40" src="/Assets/logo-removebg-preview.png" alt="">
+            <div class="mt-4 flex gap-2 cursor-pointer hover:text-cyan-500">
+                <span class="material-symbols-outlined">
+                    home
+                    </span>
+                <h3>Home</h3>
+            </div>
+            <div class="mt-4 flex gap-2 cursor-pointer hover:text-cyan-500">
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+                <h3>Notification</h3>
+            </div>
+            <div class="mt-4 flex gap-2 cursor-pointer hover:text-cyan-500">
+                <span class="material-symbols-outlined">
+                    rewarded_ads
+                </span>
+                <h3>Goals</h3>
+            </div>
+        </div>
+        <div class="invisible lg:visible flex flex-col gap-4 ">
+            <div class="flex justify-between cursor-pointer hover:text-cyan-500">
+                <h3> Spaces</h3>
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+            </div>
+            <div class="flex gap-2 cursor-pointer hover:text-cyan-500">
+                <span class="material-symbols-outlined">
+                    drag_indicator
+                </span>
+                <h3>Everything</h3>
+            </div>
+            <div class="flex gap-2 cursor-pointer hover:text-cyan-500">
+                <div class="py-1 px-2 bg-blue-900 text-white rounded inline-block  ">
+                    <p>D</p>
+                </div>
+                <h3>Development</h3>
+            </div>
+            <div class="flex gap-2 cursor-pointer hover:text-cyan-500">
+                <div class="py-1 px-2 bg-yellow-500 text-white ro inline-block  ">
+                    <p>M</p>
+                </div>
+                <h3>Marketing</h3>
+            </div>
+            <div class="flex gap-2 cursor-pointer hover:text-cyan-500">
+                <div class="py-1 px-2 bg-pink-500 text-white ro inline-block  ">
+                    <p>P</p>
+                </div>
+                <h3>Product</h3>
+            </div>
+        </div>
+        <div class="invisible lg:visible flex justify-between items-center cursor-pointer hover:text-cyan-500" >
+            <h3>Dashboards</h3>
+            <span class="material-symbols-outlined">
+                chevron_right
+            </span>
+        </div>
+        <div class="invisible lg:visible flex justify-between cursor-pointer hover:text-cyan-500">
+            <h3>Docs</h3>
+            <span class="material-symbols-outlined">
+                chevron_right
+            </span>
+        </div>  
+
+    </nav>
+    <!-- top section body -->
+    <section class=" flex gap-10 pt-20 ps-5 lg:pt-0 lg:ps-0 ">
+        <div class="flex justify-between items-center text-2xl gap-2">
+            <span class="material-symbols-outlined bg-pink-500 p-1">
+                new_releases
+            </span>
+            <h3>Release Project</h3>
+        </div>
+        <div class="flex justify-between items-center text-2xl text-blue-900 gap-2">
+            <span class="material-symbols-outlined">
+                view_headline
+            </span>
+            <h3>Grand</h3>
+        </div>
+    </section>    
+    <section class=" mt-4 grid grid-cols-3  items-center text-lg font-bold">
+        <div class="flex items-center justify-center"> 1 May - 6 May</div>
+        <div class="flex items-center justify-center"> 10 Jun - 16 Jun</div>
+        <div class="flex items-center justify-center"> 25 Jul - 31 Jul</div>
+    </section>
+    <!-- table of body -->
+    <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700 border-collapse border">
+        <thead>
+            <tr>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">1 May</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">2 May</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-rightborder-collapse border">3 May </th>                
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">4 May</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">5 May</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">6 May</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">10 Jun</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">11 Jun</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-rightborder-collapse border">12 Jun</th>                
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">13 Jun</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">14 Jun</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">15 Jun</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">16 Jun</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">25 Jul</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">26 Jul</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-rightborder-collapse border">27 Jul</th>                
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">28 Jul</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">29 Jul</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">30 Jul</th>
+                <th scope="col" class="px-4 py-3.5 text-left rtl:text-right border-collapse border">31 Jul</th>
+            </tr>
+                
+           
+        </thead>
+        <tbody class="">
+            <tr class="relative">
+                <td class="px-4 py-4 font-medium absolute left-0 right-3/4  ">
+                    <div class="flex items-center gap-4 ps-1 py-1 pe-10 bg-blue-500 rounded-full ">
+                        <img class=" w-10 h-10 rounded-full" src="/Assets/8.jpg" alt="">
+                        <p>Plan for next Month</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium"></td>
+            </tr>
+            <tr class="relative">
+                <td class="px-4 py-4 font-medium absolute left-40 right-1/3  ">
+                    <div class="flex items-center gap-4 ps-1 py-1 pe-10 bg-indigo-400 rounded-full ">
+                        <img class=" w-10 h-10 rounded-full" src="/Assets/8.jpg" alt="">
+                        <p>Plan for next year</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr class="relative">
+                <td class="px-4 py-4 font-medium absolute left-1/4 right-1/4  ">
+                    <div class="flex items-center gap-4 ps-1 py-1 pe-10 bg-yellow-500 rounded-full ">
+                        <img class=" w-10 h-10 rounded-full" src="/Assets/8.jpg" alt="">
+                        <p>Plan for Project 2</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr class="relative">
+                <td class="px-4 py-4 font-medium absolute right-20 left-2/3  ">
+                    <div class="flex items-center gap-4 ps-1 py-1 pe-10 bg-green-500 rounded-full ">
+                        <img class=" w-10 h-10 rounded-full" src="/Assets/8.jpg" alt="">
+                        <p>Plan for Project 2</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr>
+                <td class="px-4 py-4 font-medium "></td>
+            </tr>
+            <tr class="relative">
+                <td class="px-4 py-4 font-medium absolute left-0 right-0  ">
+                    <div class="flex items-center gap-4 ps-1 py-1 pe-10 bg-yellow-300 rounded-full ">
+                        <img class=" w-10 h-10 rounded-full" src="/Assets/8.jpg" alt="">
+                        <p>Plan for Project 2</p>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+         
+</body>
+</html>
