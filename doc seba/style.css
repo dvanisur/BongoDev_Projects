@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --backround-color:rgb(64, 0, 138);
+    --font-color:white;
+    --btn-color:rgb(128, 59, 255);
+
+}
+body{
+    color: var(--font-color) !important;
+    background: rgb(219, 213, 213) !important;
+    padding-top: 100px;
+}
+img{
+    width: 100%;
+    opacity: 0.8;
+}
+.view_all{
+    color: var(--font-color) !important;
+}
+a{
+    text-decoration: none !important;
+}
+
+ul li  a {
+    color: white !important;
+    font-size: 1.4rem !important;
+}
+
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.btn {
+    color: white !important;
+}
+
+.doct-img {
+    width: 100%;
+}
+
+
+.navbar{
+    width: 100vw;
+    height: 100px;
+    background: var(--backround-color);
+    color: var(--font-color) !important;
+    background-image: url(/Asset/backroundImg/pexels-jonathan-borba-3259627.jpg);
+    background-size: cover;
+}
+.navbar-brand img{
+    height: 100px;
+}
+.navbar_items{
+    display: flex !important;
+    justify-content: space-between !important;
+    
+}
+.btn_appoinment{
+    background: var(--btn-color) !important;
+    border-radius: 10px;
+    
+}
+.btn_loging{
+    padding: 10px 20px;
+    background: var(--btn-color)!important;
+    border-radius: 30px;
+    text-align: center;
+}
+.navbar-toggler{
+    background: var(--font-color) !important;
+}
+
+#hero{
+    background-image: url(/Asset/backroundImg/hero.webp);
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+#specialist{
+    background-image: url(/Asset/backroundImg/speacialist.webp);
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+/* specilaized doctor */
+
+.btn_consult:hover{
+    padding: 10px 20px;
+    margin-top: 5px !important;
+    border: 1px solid black;
+}
+.specialized_tittle, .test_tittle{
+    color: black !important;
+}
+
+#test{
+    background-image: url(/Asset/backroundImg/test.webp);
+    background-size: cover;
+    padding-bottom: 100px;
+    
+}
+/* carousal */
+
+.carousel{
+    width: 100%;
+    height: 20% !important;
+    
+}
+.carousel-inner{
+    background: white;
+}
+.carousel-item {
+    padding: 15%;
+}
+.carousal_lower img{
+    width: 80px;
+    display: inline-block;
+    border-radius: 50%;
+
+    
+}
+.carousal_lower{
+    display: flex;
+    text-align: center;
+    gap: 40px;
+    margin-left: 10vw;
+    margin-top: 20px;
+}
+.carousal_lower p{
+    padding-top: 30px;
+    font-size: 2rem;
+}
+
+/* footer */
+.footer_img{
+    width: 100%;
+}
+.footer_bx {
+    color: rgb(75, 84, 205);
+    font-size: 2rem;
+}
+.footer{
+    background: rgb(2 49 84);
+}
+
+
+/* logging */
+/* #loging{
+   width: 60%;
+   margin: auto;
+}
+.loging_card{
+    margin: 10vh 0px;
+} */
+
+/* register */
+
+
+/* finddoc */
+.find_doc{
+    margin:0 10vh !important;
+}
+
+
+
+/* find doc */
+.doctor img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+}

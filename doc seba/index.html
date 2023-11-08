@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Bootstrap script CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- boxicon CDN -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body> 
+    <nav class="navbar  navbar-expand-md fixed-top py-5  ">
+        <div class="container d-flex justify-content-between">
+            <a href="/index.html" class="navbar-brand pt-2">
+                <img src="/DOC Logo/DOC3-removebg-preview.png" alt="">
+            </a>
+            <button class="navbar-toggler border-black bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto pt-2">
+                    <li class="nav-item">
+                        <a href="/find docotor.html" class="nav-link">Find Doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/find hospital.html" class="nav-link">Find Hospital</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/ambulance.html" class="nav-link">Find Ambulance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonial" class="nav-link">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Loging.html" class="nav-link btn p-2 ms-lg-3  " style="background-color: rgb(128, 59, 255);">Loging/Register</a>
+                    </li>
+                    <li class="nav-item ">
+                       <a href="" class="btn_appoinment nav-link btn p-2 ms-lg-3  ">Appointment</a>
+                    </li>                   
+    
+                </ul>
+
+            </div>           
+            
+        </div>
+    </nav>
+    
+    
+    <!-- Hero section -->
+    <div id="hero">
+        <div class="container  py-5 ">
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-center text-align-center">
+                    <h1>
+                        One-stop solution for all your healthcare needs
+                    </h1>
+                    <p>
+                        Affordable and efficient healthcare at your fingertips. Book doctors' appointments, video consultations, ambulance service, physiotherapy service, manage medical records, and more. 
+                    </p>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">                        
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 ">
+                <div class="col col-lg-2 col-md-3 col-sm-6 g-3">
+                    <a href="">
+                        <div class="card">
+                            <img src="/Asset/Services/video-consulatncy.webp"  alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-tittle">
+                                    Video Consultancy
+                                </h4>
+                                <p class="card-text">
+                                    consult with best doctors throught video call
+                                </p>
+                            </div>
+                        </div>
+                    </a>               
+                
+                </div>
+                <div class="col col-lg-2 col-md-3 col-sm-6 g-3">
+                    <a href="">
+                        <div class="card">
+                            <img src="/Asset/Services/chamber-appointment.webp"  alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-tittle">
+                                    Chamber Appointment
+                                </h4>
+                                <p class="card-text">
+                                    Book your Appointmenteasily with few clicks
+                                </p>
+                            </div>
+                        </div>
+                    </a>               
+                
+                </div>
+                <div class="col col-lg-2 col-md-3 col-sm-6 g-3">
+                    <a href="">
+                        <div class="card">
+                            <img src="/Asset/Services/doctor-at-home.webp"  alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-tittle">
+                                    Doctor at your Home
+                                </h4>
+                                <p class="card-text"> <br>
+                                    Book a doctor to visit your home.
+                                </p>
+                            </div>
+                        </div>
+                    </a>               
+                
+                </div>
+                <div class="col col-lg-2 col-md-3 col-sm-6 g-3">
+                    <a href="">
+                        <div class="card">
+                            <img src="/Asset/Services/domiciliary-service.webp"  alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-tittle">
+                                    Domiciliary Service
+                                </h4>
+                                <p class="card-text"><br>
+                                    Physiotherapy and Nurse service at home.
+                                </p>
+                            </div>
+                        </div>
+                    </a>               
+                
+                </div>
+                <div class="col col-lg-2 col-md-3 col-sm-6 g-3">
+                    <a href="">
+                        <div class="card">
+                            <img src="/Asset/Services/ambulance-service.webp"  alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-tittle">
+                                    Ambulance Service.
+                                </h4>
+                                <p class="card-text"><br>
+                                    24/4 Emergency Ambulance Service.
+                                </p>
+                            </div>
+                        </div>
+                    </a>               
+                
+                </div>
+                <div class="col col-lg-2 col-md-3 col-sm-6 g-3">
+                    <a href="">
+                        <div class="card">
+                            <img src="/Asset/Services/Report .jpg"  alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-tittle">
+                                    Download Test Report
+                                </h4>
+                                <p class="card-text">
+                                    You can easily find all report & history.
+                                </p>
+                            </div>
+                        </div>
+                    </a>               
+                
+                </div>
+            </div>
+        
+    
+        </div>
+
+    </div>
+
+    
+       <!-- specialized doctors -->
+    <div id="specialist">
+        <div class="container ">
+            <div class="row py-5">
+                <div class="col d-flex justify-content-between text-align-center">
+                    <div>
+                        <h1>Consult our top specialized doctors</h1>
+                        <p>Our doctors are ready to serve you 24/7</p>
+                    </div>
+                    <a href=""><p class="view_all">View all <i class='bx bxs-chevron-right'></i></p></a>                
+                     
+                </div>
+            </div>
+            <div class="row mt-1">           
+                <div class="col col-lg-2 col-md-4 col-sm-6 g-3">
+                    <div class="card">
+                        <a href=""><img src="/DOC Logo/cardiologist.webp" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle specialized_tittle "><br>
+                                Cardiologist
+                            </h4>
+                            <a class="card-link btn_consult stretched-link" href="">Consult Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-4 col-sm-6 g-3">
+                    <div class="card">
+                        <a href=""><img src="/Asset/Specializations/allergy-skin-vd.webp" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle specialized_tittle">
+                                Allergy Skin-VD
+                            </h4>
+                            <a class="card-link stretched-link btn_consult" href="">Consult Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-4 col-sm-6 g-3">
+                    <div class="card">
+                        <a href=""><img src="/Asset/Specializations/andrologist.webp" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle specialized_tittle"><br>
+                                Andrologist
+                            </h4>
+                            <a class="card-link stretched-link btn_consult" href="">Consult Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-4 col-sm-6 g-3">
+                    <div class="card">
+                        <a href=""><img src="/Asset/Specializations/vascular-surgeon.webp" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle specialized_tittle">
+                                Vascular-surgeon
+                            </h4>
+                            <a class="card-link stretched-link btn_consult" href="">Consult Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-4 col-sm-6 g-3">
+                    <div class="card">
+                        <a href=""><img src="/Asset/Specializations/anesthesiologist.webp" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle specialized_tittle">
+                                Anesthesiologist
+                            </h4>
+                            <a class="card-link stretched-link btn_consult " href="">Consult Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-4 col-sm-6 g-3">
+                    <div class="card">
+                        <a href=""><img src="/Asset/Specializations/cosmetic-dentistry.webp" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle specialized_tittle">
+                                Cosmetic-dentistry
+                            </h4>
+                            <a class="card-link stretched-link btn_consult " href="">Consult Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+        <!-- Test -->
+    <div id="test">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col d-flex justify-content-between text-align-center">
+                    <div>
+                        <h1>Get timely, cost-effective, and high quality diagnostic care</h1>
+                        <p>Book tests with top labs, get sample pick up, share reports with doctors online</p>
+                    </div>
+                    <a href=""><p class="view_all">View all <i class='bx bxs-chevron-right'></i></p></a>                 
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col col-lg-2 col-md-4 col-sm-6 g-3">
+                    <div class="card">
+                        <a href=""><img src="/Asset/Test/CT Scan.webp" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle test_tittle ">
+                                CT Scan
+                            </h4>
+                            <a class="card-link stretched-link btn_consult " href="">Check Price</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-4 col-sm-6 g-3">
+                    <div class="card">
+                        <a href=""><img src="/Asset/Test/Blood Tests.webp" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle test_tittle ">
+                                Blood Tests
+                            </h4>
+                            <a class="card-link stretched-link btn_consult " href="">Check Price</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-4 col-sm-6 g-3">
+                    <div class="card">
+                        <a href=""><img src="/Asset/Test/Endoscopy.webp" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle test_tittle ">
+                                Endoscopy
+                            </h4>
+                            <a class="card-link stretched-link btn_consult " href="">Check Price</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-4 col-sm-6 g-3">
+                    <div class="card">
+                        <a href=""><img src="/Asset/Test/Microbiology.webp" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle test_tittle ">
+                                Microbiology
+                            </h4>
+                            <a class="card-link stretched-link btn_consult " href="">Check Price</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-4 col-sm-6 g-3">
+                    <div class="card">
+                        <a href=""><img src="/Asset/Test/Ultrasound.webp" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle test_tittle ">
+                                Ultrasound
+                            </h4>
+                            <a class="card-link stretched-link btn_consult " href="">Check Price</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-4 col-sm-6 g-3">
+                    <div class="card">
+                        <a href=""><img src="/Asset/Test/X-ray.webp" alt="" class="card-img-top"></a>
+                        <div class="card-body">
+                            <h4 class="card-tittle test_tittle ">
+                                X-Ray
+                            </h4>
+                            <a class="card-link stretched-link btn_consult " href="">Check Price</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+
+    <!-- Emargency Ambulance -->
+    <div class="container">
+       <div class="row mt-5">
+            <div class="col d-flex justify-content-between text-align-center">                
+                <h1>We are ready to help at your emergency</h1>                
+                <a href=""><p class="view_all">View all <i class='bx bxs-chevron-right'></i></p></a>                 
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col col-lg-4 col-md-6 col-sm-12 g-3">
+                <div class="card">
+                    <a href=""><img src="/DOC Logo/ac-ambulance.webp" alt="" class="card-img-top"></a>
+                    <div class="card-body ">
+                        <h4 class="card-tittle test_tittle ">
+                            AC Ambulance
+                        </h4><hr class="text-dark">
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> Get ambulance within 30 minutes*</i></h6>
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> 24/7 affordable quality service</i> </h6>
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> We are just a call away: +88 018733*****</i> </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-6 col-sm-12 g-3">
+                <div class="card">
+                    <a href=""><img src="/Asset/help/air-ambulance.webp" alt="" class="card-img-top"></a>
+                    <div class="card-body ">
+                        <h4 class="card-tittle test_tittle ">
+                            AIR-Ambulance
+                        </h4><hr class="text-dark">
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> Get ambulance within 60 minutes*</i></h6>
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> 24/7 affordable quality service</i> </h6>
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> We are just a call away: +88 018733*****</i> </h6>
+                    </div>
+                </div>
+            </div>            
+            <div class="col col-lg-4 col-md-6 col-sm-12 g-3">
+                <div class="card">
+                    <a href=""><img src="/Asset/help/icu-ambulance.webp" alt="" class="card-img-top"></a>
+                    <div class="card-body ">
+                        <h4 class="card-tittle test_tittle ">
+                            ICU-Ambulance
+                        </h4><hr class="text-dark">
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> ambulance Get ambulance within 30 minutes*</i></h6>
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> 24/7 affordable quality service</i> </h6>
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> We are just a call away: +88 018733*****</i> </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-6 col-sm-12 g-3">
+                <div class="card">
+                    <a href=""><img src="/Asset/help/freezing-ambulance.webp" alt="" class="card-img-top"></a>
+                    <div class="card-body ">
+                        <h4 class="card-tittle test_tittle ">
+                            Freezing-Ambulance
+                        </h4><hr class="text-dark">
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> ambulance Get ambulance within 30 minutes*</i></h6>
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> 24/7 affordable quality service</i> </h6>
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> We are just a call away: +88 018733*****</i> </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-6 col-sm-12 g-3">
+                <div class="card">
+                    <a href=""><img src="/Asset/help/non-ac-ambulance.webp" alt="" class="card-img-top"></a>
+                    <div class="card-body ">
+                        <h4 class="card-tittle test_tittle ">
+                            Non-Ac-Ambulance
+                        </h4><hr class="text-dark">
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> ambulance Get ambulance within 30 minutes*</i></h6>
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> 24/7 affordable quality service</i> </h6>
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> We are just a call away: +88 018733*****</i> </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-6 col-sm-12 g-3">
+                <div class="card">
+                    <a href=""><img src="/Asset/help/non-ac-ambulance.webp" alt="" class="card-img-top"></a>
+                    <div class="card-body ">
+                        <h4 class="card-tittle test_tittle ">
+                            Free-Ambulance
+                        </h4><hr class="text-dark">
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> ambulance Get ambulance within 30 minutes*</i></h6>
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> 24/7 affordable quality service</i> </h6>
+                        <h6 class="text-dark"><i class='bx bxs-hand-right'> We are just a call away: +88 018733*****</i> </h6>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+
+        <!-- Carosel -->
+        <div class="row mt-5" id="testimonial">
+            <div class="col d-flex flex-column justify-content-between text-align-center">                
+                <h1>Why people love Doc Seba</h1>                
+                <p>We continuously improve our services based on the opinion of our users</p>                 
+            </div>
+        </div>
+        <div id="carouselExampleDark carouselExampleControls" class="carousel carousel-dark slide mt-1 carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5 class="text-dark">
+                            <i class='bx bxs-quote-alt-right'>
+                            “Thank you so much for your diligent follow up and especially for calling me back. 
+                            It is very rare that someone from customer support for any company ever reverts. Reaffirms my faith in Doc Seba
+                            </i>
+                        </h5>
+                        <div class="carousal_lower">
+                            <img src="/Asset/Specializations/andrologist.webp" alt="">
+                            <p class="text-dark">Md Anisur Rahman</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark"><i class='bx bxs-quote-alt-right'> 
+                            Very helpful. Far easier than doing same things on computer. Allows quick and easy search with speedy booking. 
+                            Even maintains history of doctors visited.
+                        </i>
+                        </h5>
+                        <div class="carousal_lower">
+                            <img src="/Asset/Specializations/colorectal-surgeon.webp" alt="">
+                            <p class="text-dark">Md Al Amin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark"><i class='bx bxs-quote-alt-right'> 
+                            The service of Doc Seba is praiseworthy. When my grandmother was at critical moment, 
+                            we were all worried to have a vehicle in that late night.
+                        </i>
+                        </h5>
+                        <div class="carousal_lower">
+                            <img src="/Asset/Services/doctor-at-home.webp" alt="">
+                            <p class="text-dark">Md Ridoy Hossain</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark"><i class='bx bxs-quote-alt-right'> 
+                            The service of Doc Seba is praiseworthy. When my grandmother was at critical moment, 
+                            we were all worried to have a vehicle in that late night.
+                        </i>
+                        </h5>
+                        <div class="carousal_lower">
+                            <img src="/Asset/Specializations/surgeon.webp" alt="">
+                            <p class="text-dark">Md Nur_Alam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark"><i class='bx bxs-quote-alt-right'> 
+                            Very easy to book, maintain history. Hassle free from older versions of booking appointments via telephone.. 
+                            Thanks Doc Seba for making it simple.
+                        </i>
+                        </h5>
+                        <div class="carousal_lower">
+                            <img src="/Asset/Services/domiciliary-service.webp" alt="">
+                            <p class="text-dark">Md Rifi</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark #carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark #carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Appointment -->
+
+        <div class="row mt-5" id="doctor_appointment">
+            <div class="col d-flex flex-column justify-content-between text-align-center">                
+                <h1>Get Appointment</h1>                
+                <p>Let's talk with doctors</p>                 
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col text-cente">
+                <form action="">
+                    <input class="form-control input-lg g-2 mb-2" type="text" placeholder="Your name">
+                    <div class="form-floating mb-2">
+                        <label for="email" class="text-dark">Email</label>
+                        <input class="form-control" type="text" placeholder=" Your Email">                        
+                    </div>
+                    <input type="number" class="form-control mb-2" placeholder=" Phone number">
+                    <input type="date" class="form-control mb-2">
+                    <select name="" id="" class="form-control mb-2">
+                        <option value="Nure">Dr. Nure</option>
+                        <option value="Siddiq">Dr. Siddiq</option>
+                        <option value="Alam">Dr. Alam</option>
+
+                    </select>
+                    <button class="btn p-2 mb-5" style="background-color: rgb(128, 59, 255); width:200px">Book Now </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer class="footer text-center text-white">
+    <!-- Grid container -->
+    <div class="container-fluid p-4">
+      <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class='bx footer_bx bxl-facebook-circle'></i></a>
+            
+            <!-- Youtube -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class='bx footer_bx  bxl-youtube'></i></a>
+    
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class='bx footer_bx  bxl-instagram'></i></a>
+    
+            <!-- Twitter-->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class='bx footer_bx   bxl-twitter'></i></a>
+    
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class='bx footer_bx  bxl-linkedin-square'></i></a>
+    
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class='bx footer_bx  bxl-github'></i></a>
+        </section>
+      <!-- Section: Social media -->
+  
+        <!-- Section: Form -->
+        <section class="">
+            <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                <p class="pt-2">
+                    <strong>Sign up for our newsletter</strong>
+                </p>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                    <input type="email" id="form5Example21" class="form-control" placeholder="Email address" />
+                </div>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light  mb-4">
+                    Subscribe
+                </button>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            </form>
+        </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+        <section class="mb-4">
+            <h5>
+                We are on a mission to make quality healthcare affordable and accessible for the people of Bangladesh.
+            </h5>
+        </section>
+        <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+        <section class="doctor_seba">
+            <!--Grid row-->
+            <div class="row">
+            <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase ">Doctor Seba.</h5>
+        
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">For Patients</h5>
+        
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="/find docotor.html" class="text-white">Find Doctors</a>
+                        </li>
+                        <li>
+                            <a href="/find hospital.html class="text-white">Find Hospital</a>
+                        </li>
+                        <li>
+                            <a href="/find hospital.html" class="text-white">Find Ambulances</a>
+                        </li>
+                        <li>
+                            <a href="#doctor_appointment" class="text-white">Doctor Appointment</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-white">Cancellation & Refund Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">For Doctors/Organisations</h5>
+        
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Login As Doctor</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Work With Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>               
+        
+                
+            </div>
+        <!--Grid row-->
+        </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="/index.html">docseba.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+    <!-- Bootstrap script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
